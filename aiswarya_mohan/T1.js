@@ -1,4 +1,4 @@
-let rowcount =8
+let rowcount = 8
 for(let i=1;i<=rowcount;i++)
     {
         if(i<=4)
@@ -19,7 +19,18 @@ for(let i=1;i<=rowcount;i++)
             }
         else
         {
-            
+         space = i-5
+         star = 17 - (2*i)
+         pattern=""
+         for(l=1;l<=space;l++)
+            {
+                pattern+=" "
+            }
+        for(m=1;m<=star;m++)
+            {
+                pattern+="*"
+            }
+            console.log(pattern)
         }
         
     }
