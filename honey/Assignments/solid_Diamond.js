@@ -2,57 +2,57 @@ for (let i = 1; i <= 11; i++) {
     if (i == 1 || i == 11) {
         let pattern = "";
         let space = 5
-        for(let k=1;k<=space;k++){
-            pattern+=" ";
+        for (let k = 1; k <= space; k++) {
+            pattern += " ";
         }
         for (let j = 1; j <= 1; j++) {
-            pattern += 'A'+" ";
+            pattern += 'A' + " ";
         }
         console.log(pattern);
     } else if (i == 2 || i == 10) {
         let pattern = "";
         let space = 4
-        for(let k=1;k<=space;k++){
-            pattern+=" ";
+        for (let k = 1; k <= space; k++) {
+            pattern += " ";
         }
         for (let j = 1; j <= 2; j++) {
-            pattern += 'B'+" ";
+            pattern += 'B' + " ";
         }
         console.log(pattern);
     } else if (i == 3 || i == 9) {
         let pattern = "";
         let space = 3
-        for(let k=1;k<=space;k++){
-            pattern+=" ";
+        for (let k = 1; k <= space; k++) {
+            pattern += " ";
         }
         for (let j = 1; j <= 3; j++) {
-            pattern += 'C'+" ";
+            pattern += 'C' + " ";
         }
         console.log(pattern);
     } else if (i == 4 || i == 8) {
         let pattern = "";
         let space = 2
-        for(let k=1;k<=space;k++){
-            pattern+=" ";
+        for (let k = 1; k <= space; k++) {
+            pattern += " ";
         }
         for (let j = 1; j <= 4; j++) {
-            pattern += 'D'+" ";
+            pattern += 'D' + " ";
         }
         console.log(pattern);
     } else if (i == 5 || i == 7) {
         let pattern = "";
         let space = 1
-        for(let k=1;k<=space;k++){
-            pattern+=" ";
+        for (let k = 1; k <= space; k++) {
+            pattern += " ";
         }
         for (let j = 1; j <= 5; j++) {
-            pattern += 'E'+" ";
+            pattern += 'E' + " ";
         }
         console.log(pattern);
-    } else if (i == 6) {
+    } else{
         let pattern = "";
         for (let j = 1; j <= 6; j++) {
-            pattern += 'F'+" ";
+            pattern += 'F' + " ";
         }
         console.log(pattern);
     }
