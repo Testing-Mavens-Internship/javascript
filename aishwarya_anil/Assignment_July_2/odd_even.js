@@ -8,5 +8,5 @@ if(num % 2 !== 0)
 
     else
     {
-        console.log("It is even number");
+        console.log("It is an even number");
     }
