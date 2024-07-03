@@ -35,4 +35,8 @@ jobs:
           node-version: 20
 
       - name: Run script
-        run: cd ${{ github.event.inputs.choice }} && node test.js
+        run: |
+          cd ${{ github.event.inputs.choice }}
+          for file in *.js; do
+            node "$file"
+          done
