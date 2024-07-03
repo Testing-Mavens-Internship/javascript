@@ -8,7 +8,7 @@ console.log(a||b)
 console.log(!a)
 console.log(!b)
 
-console.log("--using directly--")
+console.log("--using it directly without variables--")
 a=1
 b=6
 
