@@ -20,6 +20,9 @@ on:
           - 'nikhil'
           - 'sidharth'
           - 'solomon'
+      file_path:
+        description: Input the file relative path
+        required: false
 
 jobs:
   test:
@@ -34,7 +37,12 @@ jobs:
         with:
           node-version: 20
 
-      - name: Run script
+      - name: Run script - specific path
+        if: ${{ github.event.inputs.choice }}
+        run: node ${{ github.event.inputs.file_path }}
+
+      - name: Run script - full folder
+        if: ${{ github.event.inputs.choice }}
         run: |
           cd ${{ github.event.inputs.choice }}
           for file in *.js; do
