@@ -8,3 +8,13 @@ function myFunction(item){
     return item * 5;
 }
 console.log(x)
+
+
+
+let y=arr.map(yFunction);
+
+function yFunction(item){
+    return item >3;
+}
+console.log(y)
+
