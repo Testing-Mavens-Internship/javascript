@@ -1,0 +1,42 @@
+name: Javascript Runner
+
+on:
+  workflow_dispatch:
+    inputs:
+      choice:
+        type: choice
+        description: Select person
+        options:
+          - 'aiswarya_anil'
+          - 'aiswarya_mohan'
+          - 'aleena'
+          - 'arathy'
+          - 'aswin'
+          - 'athira'
+          - 'dinu'
+          - 'honey'
+          - 'krishna'
+          - 'mithun'
+          - 'nikhil'
+          - 'sidharth'
+          - 'solomon'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Javascript Run ${{ github.event.inputs.choice }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Run script
+        run: |
+          cd ${{ github.event.inputs.choice }}
+          for file in *.js; do
+            node "$file"
+          done
