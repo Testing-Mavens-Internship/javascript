@@ -1,59 +1,31 @@
-
-const totalLines = 7;
-
-for (let i = 1; i <= totalLines; i++) {
-    let  pattern  = "";
-    
-    if (i <= 4) {
-        let Stars = i;
-        let Spaces = 4 - i;
-        
-    
-        for (let j = 1; j <= Spaces; j++) {
-        pattern += " ";
+for(let row=0;row<=4;row++)
+    {
+ 
+        let pattern="";
+        for(let star=1;star<=row;star++){
+            pattern+="*";
         }
-        
-
-        for (let k = 1; k <= Stars; k++) {
-            pattern  += "*";
+        for(let space=2*(4-row);space>=0;space--)
+        {
+         pattern+=" ";  
         }
-        
-        
-        for (let l = 1; l <= 2 * Spaces; l++) {
-            pattern  += " ";
+        for( let star=1;star<=row;star++){
+            pattern+="*";
         }
-        
-        
-        for (let m = 1; m <= Stars; m++) {
-            pattern  += "*";
-        }
-    } else {
-        let Stars = 8 - i;
-        let Spaces = i - 4;
-        
-        
-        for (let j = 1; j <= Spaces; j++) {
-            pattern += " ";
-        }
-        
-        
-        for (let k = 1; k <= Stars; k++) {
-            pattern += "*";
-        }
-        
-        
-        for (let l = 1; l <= 2 *Spaces; l++) {
-            pattern += " ";
-        }
-        
-        
-        for (let m = 1; m <= Stars; m++) {
-            pattern += "*";
-        }
+        console.log(pattern)
     }
-    
-    console.log(pattern);
-}
-  
-        
-      
+    for(let row=3;row>=1;row--){
+        let pattern="";
+        for(let star=1;star<=row;star++) {
+            pattern+="*";
+        }
+        for(let space=2*(4 - row);space>=0;space--) {
+                    pattern += " ";
+                }
+        for(let star=1;star<=row;star++)
+            {
+            pattern+="*";
+        }
+        console.log(pattern)
+ 
+    }
