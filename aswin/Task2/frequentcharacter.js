@@ -1,11 +1,10 @@
 const input = "abbcccddddeeeee";
-let chars = input.split("");
 let counts={};
-chars.forEach(char=>{
+input.split("").forEach(char=>{
     counts[char]=(counts[char]||0)+1;
 });
-let mcount=0;
-let mostfrequentChar='';
+let mcount=0, mostfrequentChar='';
+console.log(counts)
 Object.keys(counts).forEach(char=>{
     mcount=counts[char]>mcount?(mostfrequentChar=char,counts[char]):mcount;
 });
