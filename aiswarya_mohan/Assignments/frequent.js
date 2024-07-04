@@ -1,6 +1,5 @@
 const str="abbcccddddeeeee"
 let chars=str.split('')
-console.log(chars)
 let counts={}
 chars.forEach(char => {
     counts[char] = (counts[char] || 0)+1
