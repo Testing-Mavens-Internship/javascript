@@ -20,7 +20,7 @@ for (let i = 1; i <= 4; i++) //4 is the size
 }
 
 
-for (let i = 4; i >= 1; i--) 
+for (let i = 3; i >= 1; i--) 
     {
     let pattern = '';
     let space='';

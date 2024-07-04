@@ -1,6 +1,6 @@
 {const numbers=[1,2,3,4,5]
-const m1=0;
-const y=numbers.reduce((sum,n1)=>sum+(n1*3),m1)// without m1 ,o/p=43,why???
+//const m1=0;
+const y=numbers.reduce((sum,n1)=>sum+(n1*3))// without m1 ,o/p=43,why???
 console.log(y)
 }
 
