@@ -20,7 +20,6 @@ for(let value of a)
     console.log(value)
 }
 console.log("\n")
-console.log()
 
 
 
@@ -37,3 +36,5 @@ console.log("Elements of 'names' array: " + names)
 console.log(students)
 console.log(names)
 console.log("\n")
+
+console.log()
