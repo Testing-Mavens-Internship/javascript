@@ -8,5 +8,5 @@ for(let i=1;i<=n;i++)
             }
             pattern+="\n";
     }
-console.log(pattern)
+console.log(pattern)    
 

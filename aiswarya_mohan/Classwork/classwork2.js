@@ -15,3 +15,4 @@ console.log(price1)
 let sum = price1.reduce((total,price))
 // let category2 = products.filter((item) => item.category=="Clothes")
 
+

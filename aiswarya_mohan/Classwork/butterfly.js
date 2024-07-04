@@ -17,7 +17,6 @@ for (let i = 1; i < rows / 2; i++) {
     pattern += "\n";
 }
 
-
 for (let i = rows / 2; i > 0; i--) {
 
     for (let j = 1; j <= i; j++) {

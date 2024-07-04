@@ -10,7 +10,7 @@
 // using map
 const ages=[32,33,16,40]
 let x=ages.map(checkAdult);
-console.log(x)
+console.log(x)    
 function checkAdult(age)
 {
     return age>=18;

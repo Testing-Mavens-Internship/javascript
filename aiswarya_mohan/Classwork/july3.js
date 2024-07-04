@@ -13,5 +13,5 @@ const person =[
 
 for(let item of person)
     {
-        console.log(item.name)
+        console.log(item.name)      
     }

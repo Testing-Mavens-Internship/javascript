@@ -4,5 +4,5 @@ let x=n.map(item => item*5)
 console.log(x)
 for(let i of x)
     {
-        console.log(i)
+        console.log(i)     
     }

@@ -7,4 +7,4 @@ let b=n2.splice(0,2)  // removes the values from original array and return new a
 console.log(a)
 console.log(n1)   // no change in original array
 console.log(b)
-console.log(n2)   // elements deleted from original array
+console.log(n2)   // elements deleted from original array      
