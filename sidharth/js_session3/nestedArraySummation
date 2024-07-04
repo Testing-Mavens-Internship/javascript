@@ -1,0 +1,6 @@
+const nestedArray = [[1, 2, [3, 4]], [5, [6, [7, 8]]], 9];
+const array=nestedArray.flat(Infinity);
+console.log(array);
+const x=array.reduce((sum,n1)=> sum+n1,0);
+console.log(x); 
+
