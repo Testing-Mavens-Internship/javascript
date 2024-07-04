@@ -20,6 +20,7 @@ for(let value of a)
     console.log(value)
 }
 console.log("\n")
+console.log()
 
 
 
