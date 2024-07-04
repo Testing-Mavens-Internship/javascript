@@ -54,3 +54,5 @@ switch(s)
     break
     default: console.log("Invalid")
 }
+
+console.log()
