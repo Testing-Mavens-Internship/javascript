@@ -7,7 +7,7 @@
 
 getApi()
 }
-
+console.log()
 
 
 //Create a function that waits for 3 seconds before printing a greeting message.using promise
@@ -37,4 +37,3 @@ display();
         console.log(Resolve)
     })
     }
-    
