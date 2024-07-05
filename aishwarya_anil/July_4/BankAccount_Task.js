@@ -37,7 +37,7 @@ deductMonthlyFee(){
     this.balance >= this.monthlyFee? (this.balance -= this.monthlyFee,console.log("Deducted monthly fee of: ${this.monthlyFee}. New balance: ${this.balance}")) : console.error("Insufficient funds to cover monthly fee.");
 }
 }
-console.log("---------------------------------------")
+console.log("--------------------------------------------")
 let arr = [new SavingsAccount(12345,100,7), new CheckingAccount(45667,100,5)]
 for(let user of arr){
 console.log("Account: "+user.accountnumber)
