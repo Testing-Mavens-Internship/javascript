@@ -46,9 +46,10 @@ class Inventory extends Product
         this.pdtArray=[];
     }
 
-    addProducts()
+    addProducts(product)
     {
-
+        this.pdtArray.push(product)
+        console.log(`${product.pdtname} succesfully added to cart`)
     }
 
     removeProducts()
