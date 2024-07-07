@@ -12,8 +12,6 @@ function processRequest(response){
         
     })
 }
-
-
     async function doWork(){
         try{
         const response = await makerequest("goo")
@@ -26,5 +24,6 @@ function processRequest(response){
     
 }
 doWork();
+
 
 
