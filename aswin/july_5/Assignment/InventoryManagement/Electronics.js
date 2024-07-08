@@ -7,7 +7,7 @@ export class Electronic extends Product {
     this.warranty = warranty;
   }
 
-  getInfo() {
+  getInfo(){
     return super.getInfo() + ' - Brand: ' + this.brand + ', Warranty: ' + this.warranty + ' years';
   }
 }

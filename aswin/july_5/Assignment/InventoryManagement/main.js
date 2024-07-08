@@ -26,8 +26,6 @@ async function main() {
   console.log("\nFiltering by category 'Electronic':");
   const filteredProducts = inventory.filterByCategory("Electronic");
   filteredProducts.forEach((product) => console.log(product.getInfo()));
-
-
   console.log("\nLoading products asynchronously:");
   await new Promise((resolve) => setTimeout(resolve, 2000));
   inventory.getProducts().forEach((product) => console.log(product.getInfo()));

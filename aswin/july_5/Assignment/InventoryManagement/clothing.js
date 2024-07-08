@@ -11,5 +11,3 @@ export class Clothing extends Product {
     return super.getInfo() + ' - Size: ' + this.size + ', Material: ' + this.material;
   }
 }
-
- 

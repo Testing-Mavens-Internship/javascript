@@ -9,11 +9,9 @@ export class Inventory {
     await new Promise((resolve) => setTimeout(resolve, 1000));
     this.products.push(product);
   }
-
   getProducts() {
     return this.products;
   }
-
   searchProduct(searchTerm) {
     return this.products.filter((product) =>
       product.name.toLowerCase().includes(searchTerm.toLowerCase())

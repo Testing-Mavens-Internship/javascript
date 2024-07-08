@@ -4,7 +4,6 @@ export class Product {
       this.price = price;
       this.category = category;
     }
-  
     getInfo() {
       return this.name + ' [' + this.category + '] - $' + this.price;
     }
