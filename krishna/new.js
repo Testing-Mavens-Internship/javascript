@@ -1,4 +1,4 @@
-const users = [
+users = [
     {
       name: "John Doe",
       email: "john.doe@example.com",
@@ -24,15 +24,17 @@ const users = [
       hobbies: ["dancing", "painting"]
     }
   ];
-  console.log("inActive Users:",users.filter((items=>items.active==false)));
-  console.log("Split names:",users.map((items)=>items.name.split(' ')));
-  console.log("sort users:",users.map(item => item.name).sort());
-console.log("Find User By Email:",users.find((items )=> items.email === "sam.brown@example.com"));
-console.log("All hobbies:",users.flatMap((items)=> items.hobbies));
+console.log("inActive Users:",users.filter((items=>items.active==false))); 
+
+console.log("Split users:")
+ const names=users.map((n)=>{const[firstname,lastname]=n.name.split(' ')
+    return{firstname,lastname}
+ });
+ console.log(names);
+ 
+console.log("Sorted users:");
+console.log(names.sort((a,b)=>a.lastname>b.lastname?1:-1));
+console.log("Find User By Email:",users.find((items )=> items.email === "sam.brown@example.com")); 
+console.log("All Hobbies:",users.flatMap((items)=> items.hobbies)); 
 console.log("Total Hobbies:",users.flatMap((items)=> items.hobbies).length);
 console.log("User entries:",users.map(items=>Object.entries(items)));
-
-
-
-
-  
