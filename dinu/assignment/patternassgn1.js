@@ -1,12 +1,11 @@
 
 for(let row=1;row<=4;row++)
     {
-
         let pattern="";
         for(let star=1;star<=row;star++){
             pattern+="*";
         }
-        for(let space=2*(4-row);space>=0;space--)
+        for(let space=2*(4-row);space>=1;space--)
         {
          pattern+=" ";   
         }
@@ -20,7 +19,7 @@ for(let row=1;row<=4;row++)
         for(let star=1;star<=row;star++) {
             pattern+="*";
         }
-        for(let space=2*(4 - row);space>=0;space--) {
+        for(let space=2*(4 - row);space>=1;space--) {
                     pattern += " ";
                 }
         for(let star=1;star<=row;star++)
