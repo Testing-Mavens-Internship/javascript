@@ -1,64 +1,102 @@
-// hallenge A: Inventory Management with Encapsulation
-
-// Create a class Product with properties like name, price, and quantity (encapsulated using private or protected access modifiers in ES6 or getter/setter methods).
-// Provide methods for getting and setting product details (with validation for quantity to be non-negative).
-// Create a class Inventory that manages a collection of Product objects.
-// Implement methods in Inventory to add, remove, update, and search for products.
-// Consider using a data structure like an array or object to store products in the inventory.
-// Optionally, demonstrate error handling when adding or removing products that might exceed or fall below stock levels.
-// These challenges progressively introduce key concepts:
-
 class Product {
   constructor(name, price, quantity) {
-    this._name = name;
-    this._price = price;
-    this._quantity = quantity;
+      this.name = name;
+      this.price = price;
+      this.quantity = quantity;
   }
-  setName(name) {
-    this._name = name;
+
+  set Name(name) {
+      this.name = name;
   }
-  getName() {
-    return this._name;
+
+  get Name() {
+      return this.name;
   }
-  setPrice(price) {
-    this._price = price;
+
+  set Price(price) {
+      this.price = price;
   }
-  getPrice() {
-    return this._price;
+
+  get Price() {
+      return this.price;
   }
-  setQuantity(quantity) {
-    quantity > 0
-      ? (this._quantity = quantity)
-      : console.log(
-          `${quantity} is a negative number,Quantity can't be negative number.`
-        );
+
+  set Quantity(quantity) {
+      if (quantity >= 0) {
+          this.quantity = quantity;
+      } else {
+          console.log("Error : Quantity can't be negative!");
+      }
   }
-  getQuantity() {
-    return this._quantity;
+
+  get Quantity() {
+      return this.quantity;
   }
 }
 
-class Inventory {
+class Inventory  {
   constructor() {
-    this.products = [];
-  }
-  addProduct(prods) {
-    this.products.push(prods);
-  }
-  searchProduct(prodName) {
-    return this.products.find((data) => data.getName() === prodName);
+     
+      this.ProductArray = [];
   }
 
-  updateProduct() {}
-  removeProduct() {}
+  addProduct(product) { 
+      this.ProductArray.push(product);
+      console.log(`The Product ${product.name} is added  to the inventory!`);
+  }
+
+  removeProduct(name) {
+      let index = this.ProductArray.findIndex(item => item.name === name);
+      if (index !== -1) {
+          this.ProductArray.splice(index, 1);
+          console.log(`The Product  '${name}' is removed from the inventory.`);
+      } else {
+          console.log(`The Product '${name}' is not found in inventory.`);
+      }
+  }
+
+  updateProduct(name, new_price, new_quantity) {
+      let product = this.ProductArray.find(item => item.name === name);
+      if (product) {
+          product.price = new_price;
+          product.quantity = new_quantity;
+          console.log(`The Product '${name}' details are updated in the inventory.`);
+      } else {
+          console.log(`The Product '${name}' is not found in inventory.`);
+      }
+  }
+
+  searchProduct(name) {
+      let product = this.ProductArray.find(item => item.name === name);
+      if (product) {
+          console.log(`${product.name} - Price: ${product.price}, Quantity: ${product.quantity}`);
+      } else {
+          console.log(`The Product '${name}' is not found in inventory.`);
+      }
+  }
 }
 
-let prod1 = new Product("Phone", 9999, 2);
-let prod2 = new Product("Watch", 9887, 2);
+let prod1 = new Product('Book', 10, 1);
+let prod2 = new Product('Pen', 20, 50);
+let prod3 = new Product('Crayons', 50, 50);
+let inventory_obj = new Inventory();
 
-let items = new Inventory();
+console.log("\n");
+inventory_obj.addProduct(prod1);
+inventory_obj.addProduct(prod2);
+inventory_obj.addProduct(prod3);
+console.log("\n");
 
-items.addProduct(prod1);
-items.addProduct(prod2);
-console.log(items.searchProduct("Phone"));
-console.log(items.searchProduct("Watch"));
+inventory_obj.searchProduct('Book');
+inventory_obj.updateProduct('Book', 25, 55);
+inventory_obj.searchProduct('Book');
+inventory_obj.updateProduct('Scissors', 25, 55);
+console.log("\n");
+
+inventory_obj.searchProduct('Pen');
+console.log("\n");
+
+inventory_obj.removeProduct('Book');
+inventory_obj.removeProduct('Pencil');
+
+console.log("\n");
