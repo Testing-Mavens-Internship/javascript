@@ -47,3 +47,4 @@ class Book {
    
   console.log("\nSearching for 'Moby Dick':");
   console.log(myLibrary.findBookByTitle("Moby Dick"));
+
