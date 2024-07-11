@@ -1,0 +1,75 @@
+{
+    "products": [
+      {
+        "product_id": "P001",
+        "product_name": "Wireless Mouse",
+        "product_price": 25.99,
+        "quantity": 150,
+        "description": "Ergonomic wireless mouse with adjustable DPI and long battery life."
+      },
+      {
+        "product_id": "P002",
+        "product_name": "Mechanical Keyboard",
+        "product_price": 79.99,
+        "quantity": 100,
+        "description": "Mechanical keyboard with customizable RGB backlighting and durable switches."
+      },
+      {
+        "product_id": "P003",
+        "product_name": "HD Monitor",
+        "product_price": 199.99,
+        "quantity": 75,
+        "description": "27-inch HD monitor with vibrant colors and high refresh rate."
+      },
+      {
+        "product_id": "P004",
+        "product_name": "USB-C Hub",
+        "product_price": 29.99,
+        "quantity": 200,
+        "description": "Multi-port USB-C hub with HDMI, USB 3.0, and SD card reader."
+      },
+      {
+        "product_id": "P005",
+        "product_name": "External Hard Drive",
+        "product_price": 89.99,
+        "quantity": 50,
+        "description": "1TB external hard drive with fast data transfer rates and robust build."
+      },
+      {
+        "product_id": "P006",
+        "product_name": "Bluetooth Speaker",
+        "product_price": 49.99,
+        "quantity": 120,
+        "description": "Portable Bluetooth speaker with rich sound quality and long battery life."
+      },
+      {
+        "product_id": "P007",
+        "product_name": "Webcam",
+        "product_price": 59.99,
+        "quantity": 80,
+        "description": "HD webcam with built-in microphone and wide-angle lens."
+      },
+      {
+        "product_id": "P008",
+        "product_name": "Smartphone Stand",
+        "product_price": 15.99,
+        "quantity": 300,
+        "description": "Adjustable smartphone stand with non-slip base and flexible angle."
+      },
+      {
+        "product_id": "P009",
+        "product_name": "Gaming Chair",
+        "product_price": 199.99,
+        "quantity": 40,
+        "description": "Comfortable gaming chair with ergonomic design and adjustable features."
+      },
+      {
+        "product_id": "P010",
+        "product_name": "Laptop Cooling Pad",
+        "product_price": 34.99,
+        "quantity": 90,
+        "description": "Laptop cooling pad with powerful fans and adjustable height."
+      }
+    ]
+  }
+  
