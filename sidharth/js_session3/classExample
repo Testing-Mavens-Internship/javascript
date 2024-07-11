@@ -1,0 +1,44 @@
+// class Animal{
+//     constructor(breed,age){
+//         this.breed=breed;
+//         this.age=age;
+
+
+//         this.walk = () =>{
+//             console.log("walking")
+//             console.log(this.breed);
+//         }
+//     }
+//   fly() {
+//     this.walk();
+//   }
+// }
+
+// let dog=new Animal("germansheppard",10)
+// let cat=new Animal("persian",5)
+// console.log(dog)
+//  dog.fly()
+// cat.walk()
+
+class Animal{
+    constructor(breed){
+        this.breed=breed;
+    }
+    walk(){
+        console.log("is walking");
+    }
+swim(){
+    console.log("swimming");
+}
+ Climb(){
+    console.log("climbing")
+ }
+}
+
+let dog=new Animal("germanshepard");
+let cat=new Animal("persian");
+let fish=new Animal("goldfish");
+console.log(cat);
+cat.Climb();
+
+

@@ -1,0 +1,31 @@
+//Question-2
+//const str='George Raymond Richard Martin';
+
+// let words=str.split(' ')
+// let letters=words.map(item=>item[0])
+// console.log(letters.join(''));
+
+
+//console.log(str.split(' ').map(item=>item[0]).join(''));
+
+
+
+// let obj={a: 1,b: 2,c: 3};
+// const print=Object.fromEntries(Object.entries(obj).map(([key,value]) => [value,key]))
+// console.log(print);
+
+// {
+//     const number=[1,2,3,4,5];
+// const a1=0;
+// const x=number.reduce((sum,n1)=> sum+(n1*3),a1);
+// console.log(x);
+// }
+
+const pancakes=["flipped","right side up","flipped","right side up"];
+console.log(pancakes.map(item => item == 'flipped'? "right side up":item));
+
+
+
+
+
+
