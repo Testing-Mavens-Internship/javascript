@@ -8,6 +8,7 @@ class BankAccount {
       `Account number: ${this.accountNumber} , Initial balance : ${this.balance}`
     );
   }
+  
   depositFund(deposit) {
     this.balance += deposit;
     console.log(
