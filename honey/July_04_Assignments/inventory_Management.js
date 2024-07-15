@@ -99,4 +99,4 @@ console.log("\n");
 inventory_obj.removeProduct('Book');
 inventory_obj.removeProduct('Pencil');
 
-console.log("\n");
+console.log("\n ");
