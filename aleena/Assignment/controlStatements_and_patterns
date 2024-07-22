@@ -1,0 +1,93 @@
+//pattern 1
+for(let i=1;i<=9;i++){
+ let line = '';
+ let count = i<=5?i:10-i
+ for(let j=1;j<=count;j++){
+    line += i;
+ }
+ console.log(line)
+}
+
+
+//pattern 2
+for(let k=1;k<=8;k++){
+    if(k<=4){
+    let space=4-k;
+    let stars=2*k-1;
+    let line='';
+    for(let l=1;l<=space;l++)
+        {
+            line+=' ';
+        }
+    for(let m=1;m<=stars;m++)
+        {
+         line+='*';
+        }
+    console.log(line);
+    
+    }else{
+        let space1=k-5;
+        let stars1=17-k*2;
+        let line1='';
+     for(let n=1;n<=space1;n++){
+        line1+=' ';
+     }
+        for(let p=1;p<=stars1;p++)
+            {
+             line1+='*';
+            }
+            console.log(line1);
+
+    }
+}
+
+
+
+
+//odd or even
+let number =4;
+if(number%2==0){
+    console.log(number+" is an even number");
+}else{
+    console.log(number+" is an odd number");
+}
+
+//grading system
+let mark =80;
+if(mark>=95){
+    console.log(mark+ " is of grade A+");
+}else if(mark>=85){
+    console.log(mark+ " is of grade A");
+}else if(mark>=75){
+    console.log(mark+ " is of grade B");
+}else if(mark>=65){
+    console.log(mark+ "is of grade C");
+}else if(mark>=55){
+    console.log(mark+ "is of grade D");
+}else if(mark>=45){
+    console.log(mark+ "is of grade E");
+}else{
+    console.log(mark+ "is of grade F");
+}
+
+//vowel or consonant
+var letter= 'a';
+switch(letter){
+    case 'a':
+        console.log('vowel');
+        break;
+    case 'e':
+        console.log('vowel');
+        break;
+    case 'i':
+        console.log('vowel');
+        break;
+    case 'o':
+        console.log('vowel');
+        break;
+    case 'u':
+        console.log('vowel');
+        break;
+    default:
+        console.log('consonant');
+}
