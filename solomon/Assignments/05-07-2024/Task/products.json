@@ -1,0 +1,23 @@
+{
+    "products": [
+      {
+        "name": "Samsung galaxy 5",
+        "description": "This is a Samaung galaxy 5 mobile phone.",
+        "price": 19.99,
+        "stock": 10
+      },
+      {
+        "name": "Samsung galaxy 6",
+        "description": "This is a Samaung galaxy 6 mobile phone.",
+        "price": 29.99,
+        "stock": 0
+      },
+      {
+        "name": "Samsung galaxy 6s",
+        "description": "This is a Samaung galaxy 6s mobile phone.",
+        "price": 39.99,
+        "stock": 5
+      }
+    ]
+  }
+  
